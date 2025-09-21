@@ -25,7 +25,7 @@ def main():
         print("\n\t" + "~"*60, f"N={Limite_n_valores_vector}, Valores (Min={min_val_aleatorio}, Max={max_val_aleatorio})")
         print("\n\tVector generado:", vector_num_aleatorios)
 
-        print("\n\t\tMENÚ DE OPCIONES")
+        print("\n\t\t** MENÚ DE OPCIONES **")
         print("\t" + "~"*60)
         print(f"\n\t1. Suma de números del vector: \t\t\t{resultados.get('suma', 'No calculado')}")
         print(f"\t2. Contar los números que no son primos: \t{resultados.get('no_primos', 'No calculado')}")
