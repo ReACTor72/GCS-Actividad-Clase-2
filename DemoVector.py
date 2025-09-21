@@ -10,6 +10,7 @@ def main():
     max_val_aleatorio = 500
     
     es_primo = lambda x: x > 1 and all(x % i != 0 for i in range(2, int(x**0.5) + 1))
+    es_capicua = lambda x: str(x) == str(x)[::-1]
 
     resultados = {}
     opcion_de_menu = '9'
@@ -44,6 +45,10 @@ def main():
             print(f"\n-> Cantidad de no primos: {resultados['no_primos']}")
             
         elif opcion_de_menu == '3':
+            for numero_a_verificar in vector_num_aleatorios:
+                contador_temporal_resultados += (1 if es_capicua(numero_a_verificar) else 0)
+
+            resultados['capicuas'] = contador_temporal_resultados
             print(f"\n-> Cantidad de capicúas: {resultados['capicuas']}")
 
         elif opcion_de_menu == '4':
