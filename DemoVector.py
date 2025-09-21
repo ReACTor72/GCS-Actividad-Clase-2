@@ -53,7 +53,7 @@ def main():
             print(f"\n-> Cantidad de capicúas: {resultados['capicuas']}")
 
         elif opcion_de_menu == '4':
-            print("\n\t-- Fin del ejercicio --")
+            print("\n\t-- Fin del ejercicio -- GRACIAS!!")
             
         else:
             print("* "*15, "Opción no válida. Intente de nuevo.")
