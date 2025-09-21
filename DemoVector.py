@@ -15,6 +15,8 @@ def main():
     opcion_de_menu = '9'
 
     vector_num_aleatorios = []
+    for _ in range(Limite_n_valores_vector):
+        vector_num_aleatorios.append(random.randint(min_val_aleatorio, max_val_aleatorio))
 
     while opcion_de_menu != '4':
         contador_temporal_resultados = 0
