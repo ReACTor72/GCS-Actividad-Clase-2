@@ -9,6 +9,8 @@ def main():
     min_val_aleatorio = 1
     max_val_aleatorio = 500
     
+    es_primo = lambda x: x > 1 and all(x % i != 0 for i in range(2, int(x**0.5) + 1))
+
     resultados = {}
     opcion_de_menu = '9'
 
@@ -33,6 +35,10 @@ def main():
             print(f"\n-> Suma calculada: {resultados['suma']}")
 
         elif opcion_de_menu == '2':
+            for numero_a_verificar in vector_num_aleatorios:
+                contador_temporal_resultados += (0 if es_primo(numero_a_verificar) else 1)
+
+            resultados['no_primos'] = contador_temporal_resultados            
             print(f"\n-> Cantidad de no primos: {resultados['no_primos']}")
             
         elif opcion_de_menu == '3':
