@@ -35,6 +35,7 @@ def main():
         opcion_de_menu = input("\n\tSeleccione una opción: ")
 
         if opcion_de_menu == '1':
+            resultados['suma'] = sum(vector_num_aleatorios)
             print(f"\n-> Suma calculada: {resultados['suma']}")
 
         elif opcion_de_menu == '2':
